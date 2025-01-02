@@ -3,6 +3,7 @@ import os
 def guess(a,b,name="player"):
     guess=0
     number_of_tries=0
+    b=b+1 if a==b else b
     random_number=random.randrange(a,b)
     while(1):
         number_of_tries+=1
@@ -20,29 +21,31 @@ def score(name, n):
         f = open("scores.csv", "r")
         lines = f.readlines()
         f.close()
+        if lines and lines[0].strip().lower() != "name,leaderboard position":
+            lines.insert(0, "name,Leaderboard position\n")
 
         highScore = None
-
-        if lines:
-            firstLine = lines[0].strip().split(",")
-            highScore =  int(firstLine[1])
+        
+        if len(lines) > 1:
+            firstLine = lines[1].strip().split(",")
+            highScore = int(firstLine[1])
 
         if highScore is None or n < highScore:
-            f= open("scores.csv", "w") 
+            f = open("scores.csv", "w")
+            f.write("name,Leaderboard position\n")
             f.write(f"{name},{n}\n")
+            if len(lines) > 1:
+                f.writelines(lines[1:])
             f.close()
-
-            if highScore is not None:
-                    f.writelines(lines)  
         else:
-            f= open("scores.csv", "a")
-            f.write(f"{name},{n}\n")
-            f.close()
+            with open("scores.csv", "a") as f:
+                f.write(f"{name},{n}\n")
 
     except FileNotFoundError:
-        f= open("scores.csv", "x")
-        f.write(f"name,Leaderboard position\n{name},{n}\n")
-        f.close()
+        with open("scores.csv", "x") as f:
+            f.write("name,Leaderboard position\n")
+            f.write(f"{name},{n}\n")
+
 
             
 if __name__=="__main__":
