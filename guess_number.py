@@ -45,8 +45,6 @@ def score(name, n):
         with open("scores.csv", "x") as f:
             f.write("name,Leaderboard position\n")
             f.write(f"{name},{n}\n")
-
-
             
 if __name__=="__main__":
     n=input("Enter your name >")
