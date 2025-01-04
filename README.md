@@ -11,12 +11,14 @@ A fun, interactive Python game where you challenge yourself to guess a randomly 
 2. Enter your name.
 3. Choose a range for the random number (e.g., 1 to 100).
 4. Start guessing! Hints will guide you:
-   - "Too high!" means your guess is above the target.
-   - "Go higher!" means you're below the target.
+   - "Too high!" means your guess is above the target.
+   - "Go higher!" means you're below the target.
 5. Keep going until you guess correctly.
 6. Your score (number of tries) will be recorded in the leaderboard. Can you top it?
 
 ---
+Ready to play? [Play Now](https://khaspa.w3spaces.com/)
+
 
 ## 📋 Features
 
@@ -97,18 +99,19 @@ John, you guessed it right in 3 tries!!
 
 ## 🤝 Contributions
 
-Want to improve the game? Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+Want to enhance the game? Contributions are welcome! Fork this repository, implement your changes, and submit a pull request. Let’s build something awesome together! 🚀
 
 ---
 
 ## 📜 License
 
-Feel free to use, modify, and share it!
+This project is open-source! Feel free to use, modify, and share it. Your creativity is the limit! 🎉
 
 ---
 
-### 🎮 Ready to Play? 
+### 🎮 Ready to Play?
 
-Clone the repo and start guessing your way to victory! 🔥
+Clone the repository and start guessing your way to victory! 🔥  
+Or simply visit the game online: [Play Now](https://khaspa.w3spaces.com/)
 
 
