@@ -112,6 +112,6 @@ This project is open-source! Feel free to use, modify, and share it. Your creati
 ### 🎮 Ready to Play?
 
 Clone the repository and start guessing your way to victory! 🔥  
-Or simply visit the game online: [Play Now](https://khaspa.w3spaces.com/)
+Or simply visit the game online: [Play Now](https://pranavkhaspa.github.io/guess-the-number/)
 
 
