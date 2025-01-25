@@ -17,7 +17,7 @@ A fun, interactive Python game where you challenge yourself to guess a randomly 
 6. Your score (number of tries) will be recorded in the leaderboard. Can you top it?
 
 ---
-Ready to play? [Play Now](https://khaspa.w3spaces.com/)
+Ready to play? [Play Now](https://pranavkhaspa.github.io/guess-the-number/)
 
 
 ## 📋 Features
